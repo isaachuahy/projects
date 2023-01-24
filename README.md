@@ -1,7 +1,7 @@
 Hello! Welcome to Hong Yee (Isaac)'s project repository.
 This is a portfolio of current projects that I am working on, in addition to other projects that I have completed before.
 
-- 🚇🚋 TTC_Regression_Report is a research report that I completed in 2022. I analysed the Toronto Transit Commission's weekday daily ridership producing a multiple linear regression model that predicts the number of TTC riders on an average weekday, given figures for employment rates, temperature, rainfall, relative humidity, gas prices, visibility.
+- 🚇🚋 TTC_Regression_Report is a research report that I completed in 2022. I analysed the Toronto Transit Commission's weekday daily ridership, producing a multiple linear regression model that predicts the number of TTC riders on an average weekday, given figures for employment rates, temperature, rainfall, relative humidity, gas prices, visibility.
 
 - 🇲🇾🚗 Malaysia_GST_Automobiles is an extended essay that I completed in late 2019. I conducted an economical analysis with Excel to investigate 
 the impact of Malaysia's changing tax regimes on Kuala Lumpur's automobile industry.
