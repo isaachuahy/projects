@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Tutoring for Professionals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Apply Inter font globally */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Dark background like the example */
+            color: #f3f4f6; /* Light text color */
+        }
+        /* Custom styles for visual appeal */
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(17, 24, 39, 0) 0%, #111827 100%);
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(96, 165, 250, 0.3), 0 4px 6px -2px rgba(96, 165, 250, 0.2);
+        }
+        .feature-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        /* Simple animation for icons or elements */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .floating-icon {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+    <header class="sticky top-0 z-50 bg-gray-900 bg-opacity-90 backdrop-blur-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-400">Your Tutoring Biz</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#services" class="text-gray-300 hover:text-blue-400 transition duration-300">Services</a>
+                <a href="#about" class="text-gray-300 hover:text-blue-400 transition duration-300">About</a>
+                <a href="#testimonials" class="text-gray-300 hover:text-blue-400 transition duration-300">Testimonials</a>
+                <a href="#faq" class="text-gray-300 hover:text-blue-400 transition duration-300">FAQ</a>
+                <a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded-lg cta-button transition duration-300">Get Started</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+             <a href="#services" class="block text-gray-300 hover:text-blue-400 transition duration-300">Services</a>
+             <a href="#about" class="block text-gray-300 hover:text-blue-400 transition duration-300">About</a>
+             <a href="#testimonials" class="block text-gray-300 hover:text-blue-400 transition duration-300">Testimonials</a>
+             <a href="#faq" class="block text-gray-300 hover:text-blue-400 transition duration-300">FAQ</a>
+             <a href="#contact" class="block mt-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded-lg cta-button transition duration-300 text-center">Get Started</a>
+        </div>
+    </header>
+
+    <section class="relative py-20 md:py-32 overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+             </div>
+         <div class="container mx-auto px-6 text-center relative z-10">
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4 text-white">
+                Unlock Your Potential. Achieve Your Goals.
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+                Personalized tutoring designed for <span class="text-blue-400 font-semibold">freelancers, remote workers, and small business owners</span>. We partner with you to build skills, overcome challenges, and drive your success.
+            </p>
+            <a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg text-lg cta-button transition duration-300">
+                Book a Free Consultation
+            </a>
+            <div class="mt-16">
+                <img src="https://placehold.co/800x400/1F2937/9CA3AF?text=Collaborative+Growth" alt="Illustration of collaborative growth" class="mx-auto rounded-lg shadow-xl" onerror="this.src='https://placehold.co/800x400/1F2937/9CA3AF?text=Image+Placeholder'">
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-32 hero-gradient"></div>
+    </section>
+
+    <section id="why-us" class="py-16 md:py-24 bg-gray-800">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">More Than Just Tutoring – It's a Partnership.</h2>
+            <p class="text-lg text-gray-300 mb-12 max-w-3xl mx-auto">
+                Standard solutions don't work for unique journeys. We focus on <span class="text-blue-400 font-semibold">your specific needs and goals</span>, offering flexible, empowering support built on collaboration and respect.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="text-center p-6 bg-gray-700 rounded-lg shadow-lg feature-card">
+                     <svg class="w-12 h-12 mx-auto mb-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg> <h3 class="text-xl font-semibold mb-2 text-white">Empowerment Focused</h3>
+                    <p class="text-gray-400">We build your confidence and skills, putting you in control of your learning and growth.</p>
+                </div>
+                <div class="text-center p-6 bg-gray-700 rounded-lg shadow-lg feature-card">
+                     <svg class="w-12 h-12 mx-auto mb-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg> <h3 class="text-xl font-semibold mb-2 text-white">Truly Personalized</h3>
+                    <p class="text-gray-400">Your goals, your pace, your schedule. Tutoring adapted entirely to your unique situation.</p>
+                </div>
+                 <div class="text-center p-6 bg-gray-700 rounded-lg shadow-lg feature-card">
+                     <svg class="w-12 h-12 mx-auto mb-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg> <h3 class="text-xl font-semibold mb-2 text-white">Results Driven</h3>
+                    <p class="text-gray-400">Connect effort with tangible outcomes. We focus on practical skills that lead to real-world success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-white">How We Can Help You Thrive</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg feature-card">
+                    <h3 class="text-xl font-semibold mb-3 text-blue-400">Targeted Skill Development</h3>
+                    <p class="text-gray-300">Master specific software, enhance business communication, improve productivity techniques, or tackle any skill gap holding you back.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg feature-card">
+                    <h3 class="text-xl font-semibold mb-3 text-blue-400">Strategic Goal Setting & Planning</h3>
+                    <p class="text-gray-300">Work collaboratively to define clear, achievable goals and create a personalized roadmap to reach them efficiently.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg feature-card">
+                    <h3 class="text-xl font-semibold mb-3 text-blue-400">Overcoming Business Challenges</h3>
+                    <p class="text-gray-300">Get support navigating specific hurdles in your freelance career or small business, from project management to client relations.</p>
+                </div>
+                 <div class="bg-gray-800 p-6 rounded-lg shadow-lg feature-card">
+                    <h3 class="text-xl font-semibold mb-3 text-blue-400">Confidence Building</h3>
+                    <p class="text-gray-300">Gain the assurance to take on new challenges, negotiate effectively, and showcase your expertise.</p>
+                </div>
+                 <div class="bg-gray-800 p-6 rounded-lg shadow-lg feature-card">
+                    <h3 class="text-xl font-semibold mb-3 text-blue-400">Flexible Scheduling</h3>
+                    <p class="text-gray-300">Tutoring sessions designed to fit seamlessly into your busy schedule as a professional.</p>
+                </div>
+                 <div class="bg-gray-800 p-6 rounded-lg shadow-lg feature-card">
+                    <h3 class="text-xl font-semibold mb-3 text-blue-400">Supportive Learning Environment</h3>
+                    <p class="text-gray-300">A non-judgmental space to ask questions, experiment, and grow at your own pace.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <section id="how-it-works" class="py-16 md:py-24 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Your Path to Progress</h2>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16">
+                <div class="text-center max-w-xs">
+                    <div class="bg-blue-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">1</div>
+                    <h3 class="text-xl font-semibold mb-2 text-white">Consultation</h3>
+                    <p class="text-gray-400">We discuss your goals, challenges, and learning style in a free initial meeting.</p>
+                </div>
+                <div class="hidden md:block text-gray-500 text-4xl">→</div>
+                 <div class="text-center max-w-xs">
+                    <div class="bg-blue-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">2</div>
+                    <h3 class="text-xl font-semibold mb-2 text-white">Personalized Plan</h3>
+                    <p class="text-gray-400">Together, we create a tailored tutoring plan focused on your objectives.</p>
+                </div>
+                <div class="hidden md:block text-gray-500 text-4xl">→</div>
+                <div class="text-center max-w-xs">
+                     <div class="bg-blue-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">3</div>
+                    <h3 class="text-xl font-semibold mb-2 text-white">Collaborative Sessions</h3>
+                    <p class="text-gray-400">Engage in supportive, interactive sessions designed for practical learning and skill application.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Success Stories from Professionals Like You</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <blockquote class="bg-gray-800 p-6 rounded-lg shadow-lg feature-card">
+                    <p class="text-gray-300 mb-4 italic">"The personalized approach made all the difference. I finally mastered [Specific Skill] and landed a major project thanks to the focused guidance. It felt like a true partnership."</p>
+                    <footer class="text-right text-blue-400 font-semibold">- Alex R., Freelance Designer</footer>
+                </blockquote>
+                <blockquote class="bg-gray-800 p-6 rounded-lg shadow-lg feature-card">
+                    <p class="text-gray-300 mb-4 italic">"As a small business owner, my time is limited. The flexible scheduling and targeted sessions helped me improve my [Specific Area] without disrupting my workflow. Highly recommend!"</p>
+                    <footer class="text-right text-blue-400 font-semibold">- Sarah K., Small Business Owner</footer>
+                </blockquote>
+                 </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 md:py-24 bg-gray-800">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Meet Your Tutor & Partner</h2>
+                <p class="text-gray-300 mb-4">Hi, I'm [Your Name], and I'm passionate about helping driven professionals like you succeed. With a background in [Your Relevant Background/Expertise] and years of experience in [Relevant Field/Tutoring], I understand the unique challenges and opportunities faced by freelancers and small business owners.</p>
+                <p class="text-gray-300 mb-4">My approach is built on collaboration, empathy, and a genuine desire to see you achieve your goals. I believe learning should be empowering and directly applicable to your work and aspirations.</p>
+                <p class="text-gray-300">Let's work together to unlock your full potential.</p>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://placehold.co/400x400/374151/9CA3AF?text=Your+Photo" alt="Photo of [Your Name]" class="rounded-full shadow-xl w-64 h-64 md:w-80 md:h-80 object-cover" onerror="this.src='https://placehold.co/400x400/374151/9CA3AF?text=Placeholder'">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 md:py-24 bg-blue-600 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Elevate Your Skills and Confidence?</h2>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+                Take the first step towards achieving your professional goals. Book a free, no-obligation consultation to discuss how personalized tutoring can help you.
+            </p>
+            <a href="#" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-lg text-lg cta-button transition duration-300 hover:bg-gray-100">
+                Schedule Your Free Consultation Today
+            </a>
+        </div>
+    </section>
+
+    <section id="faq" class="py-16 md:py-24">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Frequently Asked Questions</h2>
+            <div class="space-y-6">
+                <details class="bg-gray-800 p-4 rounded-lg cursor-pointer group">
+                    <summary class="font-semibold text-lg text-white group-hover:text-blue-400 flex justify-between items-center">
+                        How is this different from online courses or group workshops?
+                        <svg class="w-5 h-5 transform transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <p class="text-gray-300 mt-3 pl-2">Our tutoring is 100% personalized to your specific goals, learning pace, and schedule. Unlike pre-recorded courses, sessions are interactive and collaborative, allowing us to address your unique questions and challenges in real-time. We focus entirely on what *you* need to succeed.</p>
+                </details>
+                <details class="bg-gray-800 p-4 rounded-lg cursor-pointer group">
+                    <summary class="font-semibold text-lg text-white group-hover:text-blue-400 flex justify-between items-center">
+                        What specific skills or areas do you cover?
+                        <svg class="w-5 h-5 transform transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <p class="text-gray-300 mt-3 pl-2">We cover a range of areas relevant to freelancers and small business owners, including [List 2-3 Key Areas like: productivity tools, business communication, project management software, specific technical skills, etc.]. The best way to know if we cover your specific need is to book a free consultation to discuss it.</p>
+                </details>
+                <details class="bg-gray-800 p-4 rounded-lg cursor-pointer group">
+                    <summary class="font-semibold text-lg text-white group-hover:text-blue-400 flex justify-between items-center">
+                        What is the time commitment?
+                         <svg class="w-5 h-5 transform transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <p class="text-gray-300 mt-3 pl-2">It's flexible! We typically recommend [Suggest typical frequency, e.g., weekly or bi-weekly sessions of 60-90 minutes], but we tailor the frequency and duration to your availability and goals. We work around your schedule.</p>
+                </details>
+                 <details class="bg-gray-800 p-4 rounded-lg cursor-pointer group">
+                    <summary class="font-semibold text-lg text-white group-hover:text-blue-400 flex justify-between items-center">
+                        How are sessions conducted?
+                         <svg class="w-5 h-5 transform transition-transform duration-300 group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </summary>
+                    <p class="text-gray-300 mt-3 pl-2">Sessions are typically conducted online via video conferencing tools like Zoom or Google Meet, allowing for screen sharing and interactive collaboration from anywhere.</p>
+                </details>
+                </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 py-8">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <p>&copy; 2025 Your Tutoring Biz. All rights reserved.</p>
+            <div class="mt-4 space-x-4">
+                <a href="mailto:your.email@example.com" class="hover:text-blue-400 transition duration-300">Contact Us</a>
+                </div>
+        </div>
+    </footer>
+
+    <script>
+        // Basic mobile menu toggle
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked (optional)
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Smooth scroll for anchor links (optional)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                // Only prevent default if it's an internal link for scrolling
+                if (this.getAttribute('href').startsWith('#') && this.getAttribute('href').length > 1) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
